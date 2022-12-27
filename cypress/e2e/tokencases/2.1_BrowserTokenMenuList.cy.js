@@ -31,7 +31,7 @@ describe('SproutSmokeTest',()=>{
         cy.visit('home/token/token-warrants')
         cy.contains('Security').should('exist')
         cy.visit('home/token/transaction')
-        cy.contains('Export Report').should('exist')
+        cy.contains('Export report').should('exist')
         cy.get('.glyphicon-user').click()
         cy.contains('Log out').click() 
         cy.clearCookies()

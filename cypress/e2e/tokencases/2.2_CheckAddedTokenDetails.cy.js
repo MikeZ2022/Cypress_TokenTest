@@ -15,7 +15,7 @@ describe('SproutSmokeTest',()=>{
     it('2.2 Exist Token Details check',()=>{   
         cy.visit('/home/token/dashboard')
         cy.url().should('contains','token/dashboard')
-        cy.contains('Select Token').trigger('mouseover')
+        cy.get('.token-dash-board-title > .ant-btn').trigger('mouseover')
         cy.visit('/home/token/detail')
         cy.contains('Overview').should('be.visible')
         cy.contains('Profile Summary').should('be.visible')
